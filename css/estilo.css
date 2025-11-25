@@ -24,22 +24,20 @@ header {
   min-height: 580px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
-
-.menu {
+header .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media screen and (min-width: 800px) {
-  .menu {
-    display: flex;
+  header .menu {
     flex-direction: row;
     justify-content: space-between;
   }
 }
-
-.logo {
+header .menu .logo {
   position: relative;
   text-decoration: none;
   padding: 10px;
@@ -48,99 +46,94 @@ header {
   color: #F7F7F7;
 }
 @media screen and (min-width: 480px) {
-  .logo:hover .submenu {
+  header .menu .logo:hover .submenu {
     display: flex;
   }
-  .logo:hover .submenu ul {
+  header .menu .logo:hover .submenu ul {
     list-style: none;
     display: flex;
     flex-direction: column;
   }
-  .logo:hover .submenu ul li {
+  header .menu .logo:hover .submenu ul li {
     display: flex;
     flex-direction: row;
     margin: 10px;
     align-items: center;
   }
-  .logo:hover .submenu ul input {
+  header .menu .logo:hover .submenu ul input {
     flex-grow: 1;
     border: none;
     height: 20px;
   }
 }
-
-.submenu {
+header .menu .logo .submenu {
   position: absolute;
   display: none;
   background-color: #7a745c;
 }
-.submenu .button {
+header .menu .logo .submenu .button {
   display: flex;
   background: none;
   justify-content: flex-end;
 }
-.submenu .button :hover {
+header .menu .logo .submenu .button:hover {
   background-color: #546cc3;
 }
-.submenu button {
+header .menu .logo .submenu button {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   padding: 10px;
   background-color: black;
-  justify-content: flex-end;
   color: white;
+  justify-content: flex-end;
 }
-
-.nav {
+header .menu .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 5px;
 }
-.nav i {
+header .menu .nav i {
   font-size: 25px;
 }
 @media screen and (min-width: 480px) {
-  .nav i {
+  header .menu .nav i {
     font-size: 10px;
   }
 }
-.nav span {
+header .menu .nav span {
   display: none;
 }
 @media screen and (min-width: 480px) {
-  .nav span {
+  header .menu .nav span {
     display: flex;
     align-items: center;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding: 0 5px;
   }
 }
-.nav a {
+header .menu .nav a {
   color: #F7F7F7;
   padding-right: 10px;
 }
 @media screen and (min-width: 480px) {
-  .nav a {
+  header .menu .nav a {
     display: flex;
     align-items: center;
     text-decoration: none;
   }
 }
-
-.social {
+header .menu .social {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.social :nth-child(1) {
+header .menu .social :nth-child(1) {
   padding-right: 2px;
 }
-.social i {
+header .menu .social i {
   color: #F7F7F7;
 }
-
-.texto-principal {
+header .texto-principal {
   color: white;
   display: flex;
   flex-direction: column;
@@ -149,9 +142,7 @@ header {
   flex-grow: 1;
 }
 @media screen and (min-width: 480px) {
-  .texto-principal {
-    display: flex;
-    flex-direction: column;
+  header .texto-principal {
     align-items: flex-start;
   }
 }
@@ -169,45 +160,44 @@ header {
     flex-grow: 1;
   }
 }
-
-.articulos {
+.section .articulos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.articulos img {
+.section .articulos img {
   max-width: 100%;
 }
-.articulos .article {
+.section .articulos .article {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
   background-color: lightgray;
 }
 @media screen and (min-width: 480px) {
-  .articulos .article {
+  .section .articulos .article {
     flex-basis: calc(50% - 0.5rem);
   }
 }
 @media screen and (min-width: 800px) {
-  .articulos .article {
+  .section .articulos .article {
     flex-basis: calc(33.3333333333% - 0.6666666667rem);
   }
 }
-.articulos .article h2 {
+.section .articulos .article h2 {
   color: #fff;
   font-family: "Lora", serif;
   position: absolute;
 }
-.articulos .article a {
+.section .articulos .article a {
   align-self: flex-start;
   background-color: #000;
   color: white;
   text-decoration: none;
   padding: 10px;
 }
-.articulos .navegacion {
+.section .articulos .navegacion {
   display: flex;
   justify-content: flex-start;
   background-color: black;
@@ -215,7 +205,7 @@ header {
   flex-grow: 1;
   margin-bottom: 10px;
 }
-.articulos .navegacion a {
+.section .articulos .navegacion a {
   flex-basis: 10%;
   text-decoration: none;
   color: white;
